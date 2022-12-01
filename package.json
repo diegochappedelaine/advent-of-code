@@ -1,10 +1,10 @@
 {
   "name": "advent_of_code",
   "version": "1.0.0",
-  "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "day-1": "nodemon day-1.ts"
+    "day-1": "nodemon ./src/day-1/index.ts",
+    "day-2": "nodemon ./src/day-2/index.ts"
   },
   "dependencies": {
     "nodemon": "^2.0.20",

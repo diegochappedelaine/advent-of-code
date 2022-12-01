@@ -1,4 +1,7 @@
-import { input } from "./day-1.input";
+import fs = require("fs");
+import path = require("path");
+
+const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), "utf8");
 
 type Elf = Array<number>;
 
