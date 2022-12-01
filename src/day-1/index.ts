@@ -1,7 +1,5 @@
-import fs = require("fs");
-import path = require("path");
-
-const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), "utf8");
+const filePath = new URL(".", import.meta.url).pathname + "input.txt";
+const input = await Deno.readTextFile(filePath);
 
 type Elf = Array<number>;
 

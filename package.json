@@ -1,14 +1,6 @@
 {
   "name": "advent_of_code",
-  "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
-    "day-1": "nodemon ./src/day-1/index.ts",
-    "day-2": "nodemon ./src/day-2/index.ts"
-  },
-  "dependencies": {
-    "nodemon": "^2.0.20",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.3"
+    "day-1": "deno run --allow-all --watch src/day-1/index.ts"
   }
 }
