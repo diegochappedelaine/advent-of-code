@@ -4,6 +4,7 @@
     "day-1": "deno run --allow-all --watch src/day-1/index.ts",
     "day-2-1": "deno run --allow-all --watch src/day-2/part-1.ts",
     "day-2-2": "deno run --allow-all --watch src/day-2/part-2.ts",
-    "try": "deno run --allow-all --watch src/day-2/try.ts"
+    "day-3-1": "deno run --allow-all --watch src/day-3/part-1.ts",
+    "day-3-2": "deno run --allow-all --watch src/day-3/part-2.ts"
   }
 }
