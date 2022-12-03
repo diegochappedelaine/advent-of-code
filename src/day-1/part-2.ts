@@ -1,9 +1,9 @@
 const filePath = new URL(".", import.meta.url).pathname + "input.txt";
 const input = await Deno.readTextFile(filePath);
 
-type Elf = Array<number>;
+// PART 2
 
-// PART 1
+type Elf = Array<number>;
 
 const elves: Array<Elf> = input
   .split("\n\n")
@@ -11,34 +11,6 @@ const elves: Array<Elf> = input
 
 const reduceArrayOfNumbers = (array: Array<number>): number =>
   array.reduce((acc, curr) => acc + curr);
-
-const getElfWithMostFood = (
-  elvesToCheck: Array<Elf>
-): {
-  amount: number;
-  elfIndex: number;
-} =>
-  elvesToCheck.reduce(
-    (acc, curr, index) => {
-      const foodAmount = reduceArrayOfNumbers(curr);
-
-      if (foodAmount > acc.amount) {
-        return {
-          amount: foodAmount,
-          elfIndex: index,
-        };
-      }
-
-      return acc;
-    },
-    { amount: 0, elfIndex: 0 }
-  );
-
-const { amount } = getElfWithMostFood(elves);
-
-console.log("Part 1:", amount);
-
-// PART 2
 
 const getTopThreeFoodsTotal = (elvesToCheck: Array<Elf>): number => {
   const foodAmounts = elvesToCheck.map(reduceArrayOfNumbers);
