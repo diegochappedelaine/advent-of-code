@@ -42,5 +42,3 @@ const sumOfAllPriorities = types.reduce(
 );
 
 console.log("Part 1:", sumOfAllPriorities);
-
-// PART 2
