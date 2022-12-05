@@ -15,4 +15,4 @@ const assignmentWithPartialOverlap: Array<Ranges> = ranges.filter(
   }
 );
 
-console.log("Part 2:", assignmentWithPartialOverlap.length);
+export const result = assignmentWithPartialOverlap.length;

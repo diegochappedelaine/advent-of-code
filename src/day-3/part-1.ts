@@ -41,4 +41,4 @@ const sumOfAllPriorities = types.reduce(
   0
 );
 
-console.log("Part 1:", sumOfAllPriorities);
+export const result = sumOfAllPriorities;

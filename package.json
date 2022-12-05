@@ -2,13 +2,9 @@
   "name": "advent_of_code",
   "scripts": {
     "lint": "deno lint",
-    "day-1-1": "deno run --allow-all --watch src/day-1/part-1.ts",
-    "day-1-2": "deno run --allow-all --watch src/day-1/part-2.ts",
-    "day-2-1": "deno run --allow-all --watch src/day-2/part-1.ts",
-    "day-2-2": "deno run --allow-all --watch src/day-2/part-2.ts",
-    "day-3-1": "deno run --allow-all --watch src/day-3/part-1.ts",
-    "day-3-2": "deno run --allow-all --watch src/day-3/part-2.ts",
-    "day-4-1": "deno run --allow-all --watch src/day-4/part-1.ts",
-    "day-4-2": "deno run --allow-all --watch src/day-4/part-2.ts"
+    "day-1": "deno run --allow-all --watch src/day-1/index.ts",
+    "day-2": "deno run --allow-all --watch src/day-2/index.ts",
+    "day-3": "deno run --allow-all --watch src/day-3/index.ts",
+    "day-4": "deno run --allow-all --watch src/day-4/index.ts"
   }
 }

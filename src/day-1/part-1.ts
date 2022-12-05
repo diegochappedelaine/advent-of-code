@@ -21,4 +21,4 @@ const getTopFood = (elvesToCheck: Array<Elf>): number => {
 
 const amount = getTopFood(elves);
 
-console.log("Part 1:", amount);
+export const result = amount;

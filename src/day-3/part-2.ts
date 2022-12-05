@@ -44,4 +44,4 @@ const sumOfAllPriorities = badges.reduce(
   0
 );
 
-console.log("Part 2:", sumOfAllPriorities);
+export const result = sumOfAllPriorities;

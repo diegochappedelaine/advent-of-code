@@ -23,4 +23,4 @@ const getTopThreeFoodsTotal = (elvesToCheck: Array<Elf>): number => {
 
 const topThreeElvesTotalFood = getTopThreeFoodsTotal(elves);
 
-console.log("Part 2:", topThreeElvesTotalFood);
+export const result = topThreeElvesTotalFood;

@@ -71,4 +71,4 @@ games.forEach(([opponent, me]) => {
   score += gain + SignValues[myPlay];
 });
 
-console.log("Part 2:", score);
+export const result = score;
