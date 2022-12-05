@@ -6,7 +6,7 @@ Solutions for [Advent of code](https://adventofcode.com/2022) in TypeScript.
 
 This project is using [Deno](https://deno.land/).
 
-### Installation
+## Installation
 
 Using [Homebrew](https://formulae.brew.sh/formula/deno) (macOS):
 
@@ -43,6 +43,12 @@ $> yarn 2022-2
 - [Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)
     - [Part 1](./years/2022/day-5/part-1.ts)
     - [Part 2](./years/2022/day-5/part-2.ts)
+
+### [Advent of code 2021](https://adventofcode.com/2021)
+
+- [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1)
+    - [Part 1](./years/2021/day-1/part-1.ts)
+    - [Part 2](./years/2021/day-1/part-2.ts)
 
 ## Credits
 
