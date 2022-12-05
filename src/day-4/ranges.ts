@@ -19,10 +19,6 @@ const assignments = input
     ];
   }) as Array<Assignment>;
 
-const generateNumbersFromRange = (start: number, end: number): Range =>
-  Array.from({ length: end - start + 1 }, (_, index) => index + start);
+const generateNumbersFromRange = (start: number, end: number): Range => Array.from({ length: end - start + 1 }, (_, index) => index + start);
 
-export const ranges: Array<Ranges> = assignments.map(([elf1, elf2]) => [
-  generateNumbersFromRange(elf1.start, elf1.end),
-  generateNumbersFromRange(elf2.start, elf2.end),
-]);
+export const ranges: Array<Ranges> = assignments.map(([elf1, elf2]) => [generateNumbersFromRange(elf1.start, elf1.end), generateNumbersFromRange(elf2.start, elf2.end)]);

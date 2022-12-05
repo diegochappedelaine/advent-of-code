@@ -3,4 +3,4 @@ const input = await Deno.readTextFile(filePath);
 
 // PART 2
 
-export const result = input;
+export const result = null;

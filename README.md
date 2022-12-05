@@ -9,8 +9,8 @@ This project is using [Deno](https://deno.land/)
 ## Running the code
 
 ```bash
-$> yarn day-1-1
-$> yarn day-1-2
+$> yarn day-1
+$> yarn day-2
 ...
 ```
 
@@ -28,3 +28,10 @@ $> yarn day-1-2
 - [Day 4: Camp Cleanup](https://adventofcode.com/2022/day/4)
     - [Part 1](./src/day-4/part-1.ts)
     - [Part 2](./src/day-4/part-2.ts)
+- [Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)
+    - [Part 1](./src/day-5/part-1.ts)
+    - [Part 2](./src/day-5/part-2.ts)
+
+## Credits
+
+[Advent of code](https://adventofcode.com/2022) is made by [Eric Wastl](https://twitter.com/ericwastl).

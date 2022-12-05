@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true
+  },
+  "lint": {
+    "files": {
+      "exclude": ["src/template"],
+      "include": ["src/"]
+    },
+    "rules": {
+      "include": [
+        "ban-types",
+        "ban-unused-ignore",
+        "ban-untagged-ignore",
+        "for-direction",
+        "no-array-constructor",
+        "no-case-declarations",
+        "no-explicit-any",
+        "no-extra-boolean-cast",
+        "no-invalid-regexp",
+        "no-irregular-whitespace",
+        "no-unreachable",
+        "no-var",
+        "prefer-as-const",
+        "prefer-const"
+      ],
+      "tags": ["recommended"]
+    }
+  }
+}

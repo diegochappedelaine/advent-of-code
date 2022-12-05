@@ -5,12 +5,9 @@ const input = await Deno.readTextFile(filePath);
 
 type Elf = Array<number>;
 
-const elves: Array<Elf> = input
-  .split("\n\n")
-  .map((elf) => elf.split("\n").map(Number));
+const elves: Array<Elf> = input.split("\n\n").map((elf) => elf.split("\n").map(Number));
 
-const reduceArrayOfNumbers = (array: Array<number>): number =>
-  array.reduce((acc, curr) => acc + curr);
+const reduceArrayOfNumbers = (array: Array<number>): number => array.reduce((acc, curr) => acc + curr);
 
 const getTopThreeFoodsTotal = (elvesToCheck: Array<Elf>): number => {
   const foodAmounts = elvesToCheck.map(reduceArrayOfNumbers);
