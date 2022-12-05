@@ -6,8 +6,8 @@
   },
   "lint": {
     "files": {
-      "exclude": ["src/template"],
-      "include": ["src/"]
+      "exclude": ["template"],
+      "include": ["years/"]
     },
     "rules": {
       "include": [

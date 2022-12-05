@@ -3,7 +3,7 @@
     "name": "Diego Chappedelaine",
     "url": "https://github.com/diegochappedelaine"
   },
-  "description": "Advent of Code 2022 solutions in TypeScript",
+  "description": "Advent of Code solutions in TypeScript",
   "homepage": "https://github.com/diegochappedelaine",
   "keywords": [
     "advent of code",
@@ -14,14 +14,14 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegochappedelaine/advent-of-code-2022"
+    "url": "https://github.com/diegochappedelaine/advent-of-code"
   },
   "scripts": {
-    "day-1": "deno run --allow-all --watch src/day-1/index.ts",
-    "day-2": "deno run --allow-all --watch src/day-2/index.ts",
-    "day-3": "deno run --allow-all --watch src/day-3/index.ts",
-    "day-4": "deno run --allow-all --watch src/day-4/index.ts",
-    "day-5": "deno run --allow-all --watch src/day-5/index.ts",
+    "2022-1": "deno run --allow-read --watch years/2022/day-1/index.ts",
+    "2022-2": "deno run --allow-read --watch years/2022/day-2/index.ts",
+    "2022-3": "deno run --allow-read --watch years/2022/day-3/index.ts",
+    "2022-4": "deno run --allow-read --watch years/2022/day-4/index.ts",
+    "2022-5": "deno run --allow-read --watch years/2022/day-5/index.ts",
     "lint": "deno lint"
   },
   "version": "1.0.0"
