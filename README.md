@@ -4,7 +4,7 @@ Solutions for [Advent of code](https://adventofcode.com/2022) in TypeScript.
 
 ## Getting started
 
-This project is using [Deno](https://deno.land/).
+This project uses [Deno](https://deno.land/). Make sure to have it installed on your machine before getting started.
 
 ## Installation
 
@@ -14,14 +14,21 @@ Using [Homebrew](https://formulae.brew.sh/formula/deno) (macOS):
 $> brew install deno
 ```
 
-Using [other solutions](https://deno.land/manual@v1.28.3/getting_started/installation).
+Alternatively, you can use one of the [other installation methods](https://deno.land/manual@v1.28.3/getting_started/installation) provided by Deno.
 
 ## Running the code
 
+To run a solution for a specific day, use the following command, replacing <day> with the day you want to run:
+
+```bash
+$> yarn 2022-<day>
+```
+
+For example, to run the solution for day 1, you would use the following command:
+
+
 ```bash
 $> yarn 2022-1
-$> yarn 2022-2
-...
 ```
 
 ## Solutions
@@ -47,6 +54,9 @@ $> yarn 2022-2
 ### [Advent of code 2021](https://adventofcode.com/2021)
 
 - [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1)
+    - [Part 1](./years/2021/day-1/part-1.ts)
+    - [Part 2](./years/2021/day-1/part-2.ts)
+- [Day 2: Dive!](https://adventofcode.com/2021/day/2)
     - [Part 1](./years/2021/day-1/part-1.ts)
     - [Part 2](./years/2021/day-1/part-2.ts)
 
