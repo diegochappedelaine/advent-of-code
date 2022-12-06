@@ -60,8 +60,11 @@ $> yarn 2022-1
     - [Part 1](./years/2021/day-1/part-1.ts)
     - [Part 2](./years/2021/day-1/part-2.ts)
 - [Day 2: Dive!](https://adventofcode.com/2021/day/2)
-    - [Part 1](./years/2021/day-1/part-1.ts)
-    - [Part 2](./years/2021/day-1/part-2.ts)
+    - [Part 1](./years/2021/day-2/part-1.ts)
+    - [Part 2](./years/2021/day-2/part-2.ts)
+- [Day 3: Binary Diagnostic](https://adventofcode.com/2021/day/3)
+    - [Part 1](./years/2021/day-3/part-1.ts)
+    - [Part 2](./years/2021/day-3/part-2.ts)
 
 ## Credits
 
