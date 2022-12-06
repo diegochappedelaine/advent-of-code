@@ -50,6 +50,9 @@ $> yarn 2022-1
 - [Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)
     - [Part 1](./years/2022/day-5/part-1.ts)
     - [Part 2](./years/2022/day-5/part-2.ts)
+- [Day 6: Tuning Trouble](https://adventofcode.com/2022/day/6)
+    - [Part 1](./years/2022/day-6/part-1.ts)
+    - [Part 2](./years/2022/day-6/part-2.ts)
 
 ### [Advent of code 2021](https://adventofcode.com/2021)
 
