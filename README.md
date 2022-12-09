@@ -1,12 +1,12 @@
 # Advent of code
 
-Solutions for [Advent of code](https://adventofcode.com/2022) in TypeScript.
+Solutions for [Advent of code](https://adventofcode.com/2022) written in TypeScript.
 
 ## Getting started
 
 This project uses [Deno](https://deno.land/). Make sure to have it installed on your machine before getting started.
 
-## Installation
+### Installation
 
 Using [Homebrew](https://formulae.brew.sh/formula/deno) (macOS):
 
@@ -16,20 +16,23 @@ $> brew install deno
 
 Alternatively, you can use one of the [other installation methods](https://deno.land/manual@v1.28.3/getting_started/installation) provided by Deno.
 
-## Running the code
+### Running the code
 
 To run a solution for a specific day, use the following command, replacing <day> with the day you want to run:
 
 ```bash
-$> yarn 2022-<day>
+$> yarn solution <year> <day>
 ```
 
-For example, to run the solution for day 1, you would use the following command:
+### Adding a solution
 
+To add a solution for a specific day, use the following command, replacing <day> and <year>:
 
 ```bash
-$> yarn 2022-1
+$> yarn new <year> <day>         
 ```
+
+This command will create a new directory for the solution and initialize it with the necessary files. It will also add the solution to the list of available solutions so that it can be run.
 
 ## Solutions
 
@@ -59,7 +62,7 @@ $> yarn 2022-1
 - [Day 8: Treetop Tree House](https://adventofcode.com/2022/day/8)
     - [Part 1](./years/2022/day-8/part-1.ts)
     - [Part 2](./years/2022/day-8/part-2.ts)
-- [Day 8: Rope Bridge](https://adventofcode.com/2022/day/9)
+- [Day 9: Rope Bridge](https://adventofcode.com/2022/day/9)
     - [Part 1](./years/2022/day-9/part-1.ts)
     - [Part 2](./years/2022/day-9/part-2.ts)
 

@@ -4,7 +4,7 @@
     "url": "https://github.com/diegochappedelaine"
   },
   "description": "Advent of Code solutions in TypeScript",
-  "homepage": "https://github.com/diegochappedelaine",
+  "homepage": "https://github.com/diegochappedelaine/advent-of-code",
   "keywords": [
     "advent of code",
     "typescript"
@@ -17,18 +17,9 @@
     "url": "https://github.com/diegochappedelaine/advent-of-code"
   },
   "scripts": {
-    "2021-1": "deno run --allow-read --watch years/2021/day-1/index.ts",
-    "2021-2": "deno run --allow-read --watch years/2021/day-2/index.ts",
-    "2021-3": "deno run --allow-read --watch years/2021/day-3/index.ts",
-    "2022-1": "deno run --allow-read --watch years/2022/day-1/index.ts",
-    "2022-2": "deno run --allow-read --watch years/2022/day-2/index.ts",
-    "2022-3": "deno run --allow-read --watch years/2022/day-3/index.ts",
-    "2022-4": "deno run --allow-read --watch years/2022/day-4/index.ts",
-    "2022-5": "deno run --allow-read --watch years/2022/day-5/index.ts",
-    "2022-6": "deno run --allow-read --watch years/2022/day-6/index.ts",
-    "2022-8": "deno run --allow-read --watch years/2022/day-8/index.ts",
-    "2022-9": "deno run --allow-read --watch years/2022/day-9/index.ts",
-    "lint": "deno lint"
+    "lint": "deno lint",
+    "new": "scripts/new.sh",
+    "solution": "scripts/run.sh"
   },
   "version": "1.0.0"
 }

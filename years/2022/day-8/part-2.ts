@@ -32,7 +32,7 @@ const getScenicScore = (grid: Grid): number => {
   const map = getMapDimensions(grid);
   const flatMap = grid.flatMap((row) => row.split(""));
 
-  return flatMap.reduce((maxScore, _, index) => {
+  return flatMap.reduce((maxScenicScore, _, index) => {
     const { columnIndex, indexInRow, rowIndex } = getTreePosition(index, map);
 
     const row = getRow(rowIndex, grid);
@@ -41,9 +41,9 @@ const getScenicScore = (grid: Grid): number => {
 
     const { left, right, top, bottom } = getViews(row, indexInRow, column, rowIndex);
 
-    const result = lengthOfLineOfSight(treeHeight, left) * lengthOfLineOfSight(treeHeight, right) * lengthOfLineOfSight(treeHeight, top) * lengthOfLineOfSight(treeHeight, bottom);
+    const currentScenicScore = lengthOfLineOfSight(treeHeight, left) * lengthOfLineOfSight(treeHeight, right) * lengthOfLineOfSight(treeHeight, top) * lengthOfLineOfSight(treeHeight, bottom);
 
-    return Math.max(maxScore, result);
+    return Math.max(maxScenicScore, currentScenicScore);
   }, 0);
 };
 
