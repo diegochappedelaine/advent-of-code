@@ -56,6 +56,9 @@ $> yarn 2022-1
 - [Day 8: Treetop Tree House](https://adventofcode.com/2022/day/8)
     - [Part 1](./years/2022/day-8/part-1.ts)
     - [Part 2](./years/2022/day-8/part-2.ts)
+- [Day 8: Rope Bridge](https://adventofcode.com/2022/day/9)
+    - [Part 1](./years/2022/day-9/part-1.ts)
+    - [Part 2](./years/2022/day-9/part-2.ts)
 
 ### [Advent of code 2021](https://adventofcode.com/2021)
 

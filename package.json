@@ -27,6 +27,7 @@
     "2022-5": "deno run --allow-read --watch years/2022/day-5/index.ts",
     "2022-6": "deno run --allow-read --watch years/2022/day-6/index.ts",
     "2022-8": "deno run --allow-read --watch years/2022/day-8/index.ts",
+    "2022-9": "deno run --allow-read --watch years/2022/day-9/index.ts",
     "lint": "deno lint"
   },
   "version": "1.0.0"
