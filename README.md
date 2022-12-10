@@ -65,6 +65,9 @@ This command will create a new directory for the solution and initialize it with
 - [Day 9: Rope Bridge](https://adventofcode.com/2022/day/9)
     - [Part 1](./years/2022/day-9/part-1.ts)
     - [Part 2](./years/2022/day-9/part-2.ts)
+- [Day 10: Cathode-Ray Tube](https://adventofcode.com/2022/day/10)
+    - [Part 1](./years/2022/day-10/part-1.ts)
+    - [Part 2](./years/2022/day-10/part-2.ts)
 
 ### [Advent of code 2021](https://adventofcode.com/2021)
 
