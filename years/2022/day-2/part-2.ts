@@ -1,13 +1,10 @@
+import { GameGain, Plays, Resolution, SignValues } from "./rock-paper-scissors.ts";
+
 const filePath = new URL(".", import.meta.url).pathname + "input.txt";
 const input = await Deno.readTextFile(filePath);
 
 // PART 2
 
-enum Plays {
-  Rock,
-  Paper,
-  Scissors,
-}
 const PlaysMap = {
   A: Plays.Rock,
   B: Plays.Paper,
@@ -15,28 +12,12 @@ const PlaysMap = {
 } as const;
 type Instruction = keyof typeof PlaysMap;
 
-enum Resolution {
-  Lose,
-  Draw,
-  Win,
-}
 const ResolutionsMap = {
   X: Resolution.Lose,
   Y: Resolution.Draw,
   Z: Resolution.Win,
 } as const;
 type ResolutionType = keyof typeof ResolutionsMap;
-
-const GameGain = {
-  [Resolution.Win]: 6,
-  [Resolution.Draw]: 3,
-  [Resolution.Lose]: 0,
-} as const;
-const SignValues = {
-  [Plays.Rock]: 1,
-  [Plays.Paper]: 2,
-  [Plays.Scissors]: 3,
-} as const;
 
 const gameRules = {
   [Plays.Rock]: {
