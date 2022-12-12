@@ -71,6 +71,9 @@ This command will create a new directory for the solution and initialize it with
 - [Day 11: Monkey in the Middle](https://adventofcode.com/2022/day/11)
     - [Part 1](./years/2022/day-11/part-1.ts)
     - [Part 2](./years/2022/day-11/part-2.ts)
+- [Day 12: Hill Climbing Algorithm](https://adventofcode.com/2022/day/12)
+    - [Part 1](./years/2022/day-12/part-1.ts)
+    - [Part 2](./years/2022/day-12/part-2.ts)
 
 ### [Advent of code 2021](https://adventofcode.com/2021)
 
