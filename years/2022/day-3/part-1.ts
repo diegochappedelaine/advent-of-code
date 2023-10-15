@@ -1,7 +1,8 @@
 import { priorities } from "./priorities.ts";
 
-const filePath = new URL(".", import.meta.url).pathname + "input.txt";
-const input = await Deno.readTextFile(filePath);
+const path = `${import.meta.dir}/input.txt`;
+const file = Bun.file(path);
+const input = await file.text();
 
 // PART 1
 

@@ -1,8 +1,9 @@
 import { type Monkey, getMonkeys } from "./monkey-operation-setup.ts";
 import { parseInstructions, runMonkeyBusiness } from "./stuff-slinging-simian-shenanigans.ts";
 
-const filePath = new URL(".", import.meta.url).pathname + "input.txt";
-const input = await Deno.readTextFile(filePath);
+const path = `${import.meta.dir}/input.txt`;
+const file = Bun.file(path);
+const input = await file.text();
 
 // PART 2
 

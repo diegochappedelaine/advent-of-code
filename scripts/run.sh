@@ -25,7 +25,7 @@ fi
 # Check if the file exists
 if test -f "years/$year/day-$day/index.ts"; then
   # If the file exists, run it
-  deno run --allow-read --watch years/$year/day-$day/index.ts
+  bun --watch run years/$year/day-$day/index.ts
 else
   # If the file does not exist, echo a message
   echo "Error: year or day not found."
