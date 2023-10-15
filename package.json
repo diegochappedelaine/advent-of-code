@@ -16,8 +16,13 @@
     "type": "git",
     "url": "https://github.com/diegochappedelaine/advent-of-code"
   },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "scripts": {
-    "lint": "deno lint",
     "new": "scripts/new.sh",
     "solution": "scripts/run.sh"
   },

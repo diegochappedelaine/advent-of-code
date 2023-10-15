@@ -1,7 +1,8 @@
 import { type Map, type Position, generateMap, getHeight, getMapDimensions, getNeighbors, locationToString } from "./cartography.ts";
 
-const filePath = new URL(".", import.meta.url).pathname + "input.txt";
-const input = await Deno.readTextFile(filePath);
+const path = `${import.meta.dir}/input.txt`;
+const file = Bun.file(path);
+const input = await file.text();
 
 const instructions = input.split("\n");
 
