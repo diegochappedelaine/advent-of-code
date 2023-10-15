@@ -2,7 +2,7 @@
 
 # check if the number of arguments is correct
 if [ $# -ne 2 ]; then
-  echo "Error: Invalid number of arguments. Usage: yarn solution <year> <day>"
+  echo "Error: Invalid number of arguments. Usage: bun solution <year> <day>"
   exit 1
 fi
 
