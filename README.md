@@ -17,6 +17,12 @@ $> brew install bun
 
 Alternatively, you can use one of the [other installation methods](https://bun.sh/docs/installation) provided by Bun.
 
+Then install the dependencies:
+
+```bash
+$> bun install
+```
+
 ### Running the code
 
 To run a solution for a specific day, use the following command, replacing <day> with the day you want to run:
