@@ -43,6 +43,12 @@ This command will create a new directory for the solution and initialize it with
 
 ## Solutions
 
+### [Advent of code 2023](https://adventofcode.com/2023)
+
+- [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)
+  - [Part 1](./years/2023/day-1/part-1.ts)
+  - [Part 2](./years/2023/day-1/part-2.ts)
+
 ### [Advent of code 2022](https://adventofcode.com/2022)
 
 - [Day 1: Calorie Counting](https://adventofcode.com/2022/day/1)
