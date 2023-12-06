@@ -28,5 +28,5 @@ if test -f "years/$year/day-$day/index.ts"; then
   bun --watch run years/$year/day-$day/index.ts
 else
   # If the file does not exist, echo a message
-  echo "Error: year or day not found."
+  echo "Error: year or day not found. Run 'bun new <year> <day>' to create a new solution."
 fi
