@@ -1,13 +1,13 @@
-export type File = {
+export interface File {
   type: "file";
   filename: string;
   size: number;
-};
+}
 
-export type Directory = {
+export interface Directory {
   type: "directory";
   dirname: string;
-  children: Array<Node>;
-};
+  children: Node[];
+}
 
 export type Node = File | Directory;

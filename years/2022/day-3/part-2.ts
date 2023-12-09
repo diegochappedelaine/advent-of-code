@@ -10,9 +10,9 @@ type Elf = string;
 type ElvesGroup = [Elf, Elf, Elf];
 type Badge = string;
 
-const rucksacks: Array<Elf> = input.split("\n");
+const rucksacks: Elf[] = input.split("\n");
 
-const groupOfThreeElves: Array<ElvesGroup> = rucksacks.reduce((result: Array<ElvesGroup>, rucksack, index) => {
+const groupOfThreeElves: ElvesGroup[] = rucksacks.reduce((result: ElvesGroup[], rucksack, index) => {
   const groupIndex = Math.floor(index / 3);
   const group = result[groupIndex] ?? [];
   group.push(rucksack);
@@ -31,7 +31,7 @@ const uniqueCharacterInElvesGroup = (group: ElvesGroup): Badge => {
   return badge;
 };
 
-const badges: Array<Badge> = groupOfThreeElves.map(uniqueCharacterInElvesGroup);
+const badges: Badge[] = groupOfThreeElves.map(uniqueCharacterInElvesGroup);
 
 const sumOfAllPriorities = badges.reduce((sum, badge) => sum + priorities[badge], 0);
 

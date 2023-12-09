@@ -11,12 +11,13 @@ const unparsedInstructions = rows.slice(separationIndex + 1);
 
 // Instructions parsing
 
-export type Instruction = {
+export interface Instruction {
   from: number;
   numberOfCrateToMove: number;
   to: number;
-};
-export const instructions: Array<Instruction> = unparsedInstructions.map((instruction) => {
+}
+export const instructions: Instruction[] = unparsedInstructions.map((instruction) => {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const [_, numberOfCrateToMove, __, from, ___, to] = instruction.split(" ");
 
   return { from: +from, numberOfCrateToMove: +numberOfCrateToMove, to: +to };

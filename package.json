@@ -17,14 +17,31 @@
     "url": "https://github.com/diegochappedelaine/advent-of-code"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@manypkg/cli": "^0.21.1",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "bun-types": "latest",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^42.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.1.0",
+    "only-allow": "^1.2.1",
+    "typescript": "*"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts .",
     "new": "scripts/new.sh",
-    "solution": "scripts/run.sh"
+    "preinstall": "npx only-allow bun",
+    "solution": "scripts/run.sh",
+    "prepare": "husky install"
   },
   "version": "1.0.0"
 }

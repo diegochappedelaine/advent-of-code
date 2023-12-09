@@ -8,12 +8,12 @@ const input = await file.text();
 
 const grid = input.split("\n");
 
-type Views = {
+interface Views {
   left: Trees;
   right: Trees;
   top: Trees;
   bottom: Trees;
-};
+}
 
 const getViews = (row: Trees, indexInRow: number, column: Trees, rowIndex: number): Views => {
   const left = row.slice(0, indexInRow).reverse();

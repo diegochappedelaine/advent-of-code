@@ -1,13 +1,13 @@
 import { type Instructions } from "./stuff-slinging-simian-shenanigans.ts";
 
-const number_regex = /\d+/;
-const numbers_regex = /\d+/g;
+const numberRegex = /\d+/;
+const numbersRegex = /\d+/g;
 
 export enum Operation {
   Sum = "sum",
   Multiply = "multiply",
 }
-export type Monkey = {
+export interface Monkey {
   id: number;
   operation: {
     type: Operation;
@@ -20,7 +20,7 @@ export type Monkey = {
   };
   items: number[];
   inspectionCounter: number;
-};
+}
 export type Monkeys = Map<string, Monkey>;
 
 export const getMonkeys = (instructions: Instructions): Monkeys => {
@@ -28,12 +28,12 @@ export const getMonkeys = (instructions: Instructions): Monkeys => {
 
   for (const [_id, startingItems, operation, test, success, failure] of instructions) {
     const [id, items, [_, sign, value], testValue, onSuccess, onFailure] = [
-      _id.match(number_regex)?.[0],
-      startingItems.match(numbers_regex)?.map((item) => +item),
+      _id.match(numberRegex)?.[0],
+      startingItems.match(numbersRegex)?.map((item) => +item),
       operation.split("=")[1].trim().split(" "),
-      test.match(number_regex)?.[0],
-      success.match(number_regex)?.[0],
-      failure.match(number_regex)?.[0],
+      test.match(numberRegex)?.[0],
+      success.match(numberRegex)?.[0],
+      failure.match(numberRegex)?.[0],
     ];
 
     const monkey: Monkey = {

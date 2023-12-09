@@ -19,10 +19,10 @@ const digitsWithLetters = Object.keys(digitsWithLettersMap);
 
 const digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-type PossibleValue = {
+interface PossibleValue {
   position: number;
   value: number;
-};
+}
 
 // PART 2
 

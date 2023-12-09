@@ -2,7 +2,7 @@ import { type Instruction, type Stacks, instructions, stacks } from "./matrix.ts
 
 // PART 2
 
-const runCrateMover9001 = (stacksToUpdate: Stacks, instructions: Array<Instruction>): Stacks => {
+const runCrateMover9001 = (stacksToUpdate: Stacks, instructions: Instruction[]): Stacks => {
   const updatedStacks = { ...stacksToUpdate };
 
   instructions.forEach(({ from, numberOfCrateToMove, to }) => {

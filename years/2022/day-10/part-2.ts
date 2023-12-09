@@ -15,7 +15,7 @@ enum Pixel {
   Lit = "#",
   Dark = ".",
 }
-type Line = Array<Pixel>;
+type Line = Pixel[];
 
 const getPixelStatus = (spritePosition: number, cycle: number): Pixel => {
   const spriteCoverage = Array.from({ length: spriteWidth }, (_, i) => i + spritePosition);
@@ -24,18 +24,18 @@ const getPixelStatus = (spritePosition: number, cycle: number): Pixel => {
   return spriteCoverage.includes(pixelPosition) ? Pixel.Lit : Pixel.Dark;
 };
 
-const drawScreen = (pixels: Line) =>
+const drawScreen = (pixels: Line): string[] =>
   pixels.map((pixel, index) => {
     if ((index + 1) % screenWidth === 0) return `${pixel}\n`;
     return pixel;
   });
 
-const getScreenFromInstructions = (instructions: Instructions) => {
+const getScreenFromInstructions = (instructions: Instructions): string => {
   const drawing: Line = [];
   let cycle = 0;
   let spritePosition = 0;
 
-  const executeCycle = () => {
+  const executeCycle = (): void => {
     drawing[cycle] = getPixelStatus(spritePosition, cycle);
     cycle += 1;
   };

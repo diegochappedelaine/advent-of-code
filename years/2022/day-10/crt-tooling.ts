@@ -3,16 +3,16 @@ export enum Command {
   Add = "addx",
 }
 
-type Add = {
+interface Add {
   type: Command.Add;
   value: number;
-};
-type Noop = {
+}
+interface Noop {
   type: Command.Noop;
-};
+}
 
 type Instruction = Add | Noop;
-export type Instructions = Array<Instruction>;
+export type Instructions = Instruction[];
 
 const makeNoopInstruction = (): Noop => ({
   type: Command.Noop,

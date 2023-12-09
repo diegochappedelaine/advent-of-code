@@ -1,8 +1,8 @@
-type Inventory = Array<number>;
+type Inventory = number[];
 
 export const reduceArrayOfNumbers = (array: Inventory): number => array.reduce((acc, curr) => acc + curr);
 
-export const getElvesWithMostFood = (elvesToCheck: Array<Inventory>, numberOfElvesWanted: number): Array<number> => {
+export const getElvesWithMostFood = (elvesToCheck: Inventory[], numberOfElvesWanted: number): number[] => {
   const foodAmounts = elvesToCheck.map(reduceArrayOfNumbers);
   const sorted = foodAmounts.sort((a, b) => b - a);
 

@@ -9,7 +9,7 @@ const input = await file.text();
 
 const numberOfRounds = 10_000;
 
-const manageWorryLevelModulus = (monkeys: Array<Monkey>) => monkeys.map(({ test: { value } }) => value).reduce((a, b) => a * b, 1);
+const manageWorryLevelModulus = (monkeys: Monkey[]): number => monkeys.map(({ test: { value } }) => value).reduce((a, b) => a * b, 1);
 
 const instructions = parseInstructions(input);
 const monkeys = getMonkeys(instructions);

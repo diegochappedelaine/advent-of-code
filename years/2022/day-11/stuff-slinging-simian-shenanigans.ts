@@ -1,17 +1,17 @@
 import { type Monkey, type Monkeys, Operation } from "./monkey-operation-setup.ts";
 
-export const parseInstructions = (input: string) =>
+export type Instructions = string[][];
+
+export const parseInstructions = (input: string): Instructions =>
   input
     .split("Monkey")
     .map((monkey) =>
       monkey
         .split("\n")
         .map((line) => line.trim())
-        .filter(Boolean)
+        .filter(Boolean),
     )
     .filter((array) => array.length);
-
-export type Instructions = ReturnType<typeof parseInstructions>;
 
 const executeOperation = (operation: Operation, itemValue: number, value?: number): number => {
   const byValue = value ?? itemValue;
@@ -25,7 +25,7 @@ const executeOperation = (operation: Operation, itemValue: number, value?: numbe
 
 const updateValueInMonkey = (monkeys: Monkeys, monkeyId: string, value: Partial<Monkey>): void => {
   const monkey = monkeys.get(monkeyId);
-  if (!monkey) throw new Error(`Monkey with id ${monkeyId} not found`);
+  if (monkey === undefined) throw new Error(`Monkey with id ${monkeyId} not found`);
   monkeys.set(monkeyId, {
     ...monkey,
     ...value,

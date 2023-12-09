@@ -11,7 +11,7 @@ type Compartment = string;
 type RucksackType = string;
 type Priority = string;
 
-const rucksacks: Array<RucksackContent> = input.split("\n");
+const rucksacks: RucksackContent[] = input.split("\n");
 
 const splitRucksackInTwo = (string: RucksackContent): [Compartment, Compartment] => {
   const middle = Math.floor(string.length / 2);
@@ -24,7 +24,7 @@ const uniqueCharacterInRucksacks = (first: Compartment, second: Compartment): Ru
   return firstArray.find((character) => secondArray.includes(character)) ?? -1;
 };
 
-const types: Array<Priority> = rucksacks.map((rucksack) => {
+const types: Priority[] = rucksacks.map((rucksack) => {
   const [first, second] = splitRucksackInTwo(rucksack);
   const type = uniqueCharacterInRucksacks(first, second);
   if (type === -1) throw new Error("Rucksack has no type");

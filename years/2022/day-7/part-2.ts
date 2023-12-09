@@ -16,7 +16,7 @@ const tree = createTree(instructions);
 const sizes = getDirectoriesSize(tree).sort((a, b) => a - b);
 
 const getSmallestDirectoryToRemove = (totalRequiredFreeSpace: number, diskSize: number): number => {
-  const usedSpace = sizes.at(-1) || 0;
+  const usedSpace = sizes.at(-1) ?? 0;
   const unusedSpace = diskSize - usedSpace;
   const requiredSpace = totalRequiredFreeSpace - unusedSpace;
 

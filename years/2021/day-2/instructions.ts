@@ -7,15 +7,15 @@ export enum Directions {
   down = "down",
   forward = "forward",
 }
-type Instruction = {
+interface Instruction {
   direction: Directions;
   distance: number;
-};
+}
 
 export const instructions = input.split("\n").map((line) => {
   const [direction, distance] = line.split(" ");
   return {
-    direction: direction,
+    direction,
     distance: +distance,
   };
-}) as Array<Instruction>;
+}) as Instruction[];

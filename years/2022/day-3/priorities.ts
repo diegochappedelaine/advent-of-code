@@ -4,9 +4,9 @@ const alphabetLength = 26;
 
 type Letter = string;
 type Rank = number;
-type Priorities = { [key: Letter]: Rank };
+type Priorities = Record<Letter, Rank>;
 
-const generatePriorities = (start: number, indexStart = 0) =>
+const generatePriorities = (start: number, indexStart = 0): Priorities =>
   Array.from({ length: alphabetLength }).reduce((acc: Priorities, _, index) => {
     const character = String.fromCharCode(index + start);
     const rank = index + 1 + indexStart;

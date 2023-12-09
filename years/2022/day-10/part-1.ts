@@ -13,11 +13,11 @@ const cyclesToReport = [20, 60, 100, 140, 180, 220];
 const shouldReport = (cycle: number): boolean => cyclesToReport.includes(cycle);
 
 const getSumOfSignalStrengths = (instructions: Instructions): number => {
-  const report: Array<number> = [];
+  const report: number[] = [];
   let cycle = 0;
   let registerX = 1;
 
-  const executeCycle = () => {
+  const executeCycle = (): void => {
     cycle += 1;
     if (shouldReport(cycle)) report.push(registerX * cycle);
   };

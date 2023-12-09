@@ -9,6 +9,7 @@ const startingPosition = {
 };
 type Position = typeof startingPosition;
 
+// eslint-disable-next-line array-callback-return
 const position: Position = instructions.reduce((position: Position, instruction) => {
   switch (instruction.direction) {
     case Directions.up:

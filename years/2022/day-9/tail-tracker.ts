@@ -4,17 +4,17 @@ enum Directions {
   Left = "L",
   Up = "U",
 }
-type Motion = {
+interface Motion {
   direction: Directions;
   distance: number;
-};
-type Motions = Array<Motion>;
+}
+type Motions = Motion[];
 
-type Position = {
+interface Position {
   x: number;
   y: number;
-};
-type Positions = Array<Position>;
+}
+type Positions = Position[];
 
 type TailPosition = `${string}-${string}`;
 
@@ -33,12 +33,18 @@ const generatePositions = (numberOfKnots: number): Positions =>
     y: 0,
   }));
 
-const getDistance = (direction: "horizontal" | "vertical", currentPosition: Position, nextPosition: Position) => {
+const getDistance = (direction: "horizontal" | "vertical", currentPosition: Position, nextPosition: Position): number | undefined => {
   if (direction === "horizontal") return Math.abs(currentPosition.x - nextPosition.x);
   if (direction === "vertical") return Math.abs(currentPosition.y - nextPosition.y);
 };
 
-const getMovementInstructions = (horizontalDistance: number, verticalDistance: number) => {
+const getMovementInstructions = (
+  horizontalDistance: number,
+  verticalDistance: number,
+): {
+  shouldMoveHorizontally: boolean;
+  shouldMoveVertically: boolean;
+} => {
   const shouldMoveInDiagonal = horizontalDistance !== 0 && verticalDistance !== 0 && (horizontalDistance > 1 || verticalDistance > 1);
   const shouldMoveHorizontally = verticalDistance === 0 && horizontalDistance > 1;
   const shouldMoveVertically = horizontalDistance === 0 && verticalDistance > 1;

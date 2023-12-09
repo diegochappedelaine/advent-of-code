@@ -2,16 +2,16 @@ const path = `${import.meta.dir}/input.txt`;
 const file = Bun.file(path);
 const input = await file.text();
 
-type Report = Array<number>;
+type Report = number[];
 const slidingWindow = 3;
 
-const sumOfNumbers = (array: Array<number>): number => array.reduce((acc, curr) => acc + curr);
+const sumOfNumbers = (array: number[]): number => array.reduce((acc, curr) => acc + curr);
 
 const depthReport = input.split("\n").map(Number);
 
 // PART 2
 
-const getMeasurementsSlidingWindowLargerThenPreviousOne = (report: Report) => {
+const getMeasurementsSlidingWindowLargerThenPreviousOne = (report: Report): number => {
   let counter = 0;
   let previousSum = 0;
 

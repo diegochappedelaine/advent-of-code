@@ -2,9 +2,12 @@ const path = `${import.meta.dir}/input.txt`;
 const file = Bun.file(path);
 const input = await file.text();
 
-type Instruction = { start: number; end: number };
+interface Instruction {
+  start: number;
+  end: number;
+}
 type Assignment = [Instruction, Instruction];
-type Range = Array<number>;
+type Range = number[];
 export type Ranges = [Range, Range];
 
 const assignments = input
@@ -18,8 +21,8 @@ const assignments = input
       { start: +elf1start, end: +elf1end },
       { start: +elf2start, end: +elf2end },
     ];
-  }) as Array<Assignment>;
+  }) as Assignment[];
 
 const generateNumbersFromRange = (start: number, end: number): Range => Array.from({ length: end - start + 1 }, (_, index) => index + start);
 
-export const ranges: Array<Ranges> = assignments.map(([elf1, elf2]) => [generateNumbersFromRange(elf1.start, elf1.end), generateNumbersFromRange(elf2.start, elf2.end)]);
+export const ranges: Ranges[] = assignments.map(([elf1, elf2]) => [generateNumbersFromRange(elf1.start, elf1.end), generateNumbersFromRange(elf2.start, elf2.end)]);

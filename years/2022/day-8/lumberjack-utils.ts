@@ -1,15 +1,15 @@
 export type Grid = string[];
 export type Trees = number[];
 
-type TreePosition = {
+interface TreePosition {
   rowIndex: number;
   columnIndex: number;
   indexInRow: number;
-};
-type MapDimensions = {
+}
+interface MapDimensions {
   width: number;
   height: number;
-};
+}
 
 export const getMapDimensions = (grid: Grid): MapDimensions => ({
   height: grid.length,

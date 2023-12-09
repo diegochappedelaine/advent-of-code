@@ -4,7 +4,7 @@ const reverseString = (string: string): string => string.split("").reverse().joi
 
 // PART 1
 
-const runCrateMover9000 = (stacksToUpdate: Stacks, instructions: Array<Instruction>): Stacks => {
+const runCrateMover9000 = (stacksToUpdate: Stacks, instructions: Instruction[]): Stacks => {
   const updatedStacks = { ...stacksToUpdate };
 
   instructions.forEach(({ from, numberOfCrateToMove, to }) => {

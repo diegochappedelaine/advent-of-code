@@ -6,7 +6,7 @@ const calibrations = input.split("\n");
 
 // PART 1
 
-const keepOnlyDigits = (str: string) => str.replace(/\D/g, "");
+const keepOnlyDigits = (str: string): string => str.replace(/\D/g, "");
 
 const calibrationsLines = calibrations.map(keepOnlyDigits);
 

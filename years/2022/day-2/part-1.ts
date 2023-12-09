@@ -35,7 +35,7 @@ const gameRules = {
 } as const;
 
 type Game = [Instruction, Instruction];
-const games = input.split("\n").map((line) => line.split(" ")) as Array<Game>;
+const games = input.split("\n").map((line) => line.split(" ")) as Game[];
 
 let score = 0;
 

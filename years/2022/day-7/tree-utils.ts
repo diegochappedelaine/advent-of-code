@@ -1,13 +1,13 @@
 import { type Directory, type File } from "./types.ts";
 
-type Instructions = Array<string>;
+type Instructions = string[];
 enum Instruction {
   Cd = "cd",
   Up = "..",
 }
 
-const isDirectory = (line: string) => line.startsWith(Instruction.Cd);
-const isFile = (line: string) => /^[0-9]/.test(line);
+const isDirectory = (line: string): boolean => line.startsWith(Instruction.Cd);
+const isFile = (line: string): boolean => /^[0-9]/.test(line);
 
 const createFile = (filename: string, size: number): File => ({
   type: "file",
@@ -20,8 +20,8 @@ const createDirectory = (dirname: string): Directory => ({
   children: [],
 });
 
-export const createTree = (instructions: Instructions) => {
-  const path: Array<Directory> = [];
+export const createTree = (instructions: Instructions): Directory => {
+  const path: Directory[] = [];
 
   for (const instruction of instructions) {
     const parent = path.at(-1);

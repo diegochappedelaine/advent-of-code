@@ -1,5 +1,5 @@
-type DataStream = Array<string>;
-type Packet = Array<string>;
+type DataStream = string[];
+type Packet = string[];
 
 const getPacket = (dataStreamSequence: DataStream, index: number, packetSize: number): Packet => dataStreamSequence.slice(index - packetSize, index);
 const isPacketSequenceUnique = (packet: Packet): boolean => new Set(packet).size === packet.length;

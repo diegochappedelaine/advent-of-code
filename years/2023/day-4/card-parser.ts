@@ -1,9 +1,9 @@
-export type Card = {
+export interface Card {
   amount: number;
   cardNumber: number;
   winningNumbers: number[];
   selectedNumbers: number[];
-};
+}
 export type PileOfCards = Card[];
 
 export const parseTable = (input: string): Card => {

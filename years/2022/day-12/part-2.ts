@@ -19,7 +19,7 @@ const dijkstra = (start: Position, endPositions: Position[], map: Map): number =
   };
 
   let currentPosition: Position | undefined;
-  while ((currentPosition = toVisit.shift())) {
+  while ((currentPosition = toVisit.shift()) != null) {
     const current = locationToString(currentPosition);
     if (visited.includes(current)) continue;
 
@@ -35,7 +35,7 @@ const dijkstra = (start: Position, endPositions: Position[], map: Map): number =
       const path = locationToString(pathLocation);
 
       const newCostToPath = costToCurrent + 1;
-      const costToPath = lowestCost[path] === undefined ? newCostToPath : lowestCost[path];
+      const costToPath = lowestCost[path] ?? newCostToPath;
 
       if (newCostToPath <= costToPath) {
         lowestCost[path] = newCostToPath;

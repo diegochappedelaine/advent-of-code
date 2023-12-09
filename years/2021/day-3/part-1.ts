@@ -12,11 +12,11 @@ const bitCount = report[0].length;
 const zero = "0";
 const one = "1";
 
-type Sequence = Array<string>;
-type Digits = {
+type Sequence = string[];
+interface Digits {
   zeros: number;
   ones: number;
-};
+}
 
 const getDigits = (bit: Sequence): Digits => {
   const ones = bit.filter((digit) => digit === one).length;
