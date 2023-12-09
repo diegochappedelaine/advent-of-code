@@ -51,6 +51,9 @@ $> bun solution <year> <day>
 - [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)
   - [Part 1](./years/2023/day-4/part-1.ts)
   - [Part 2](./years/2023/day-4/part-2.ts)
+- [Day 6: Wait For It](https://adventofcode.com/2023/day/6)
+  - [Part 1](./years/2023/day-6/part-1.ts)
+  - [Part 2](./years/2023/day-6/part-2.ts)
 
 ### [Advent of code 2022](https://adventofcode.com/2022)
 
