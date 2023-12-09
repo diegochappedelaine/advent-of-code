@@ -23,14 +23,6 @@ Then install the dependencies:
 $> bun install
 ```
 
-### Running the code
-
-To run a solution for a specific day, use the following command, replacing <day> with the day you want to run:
-
-```bash
-$> bun solution <year> <day>
-```
-
 ### Adding a solution
 
 To add a solution for a specific day, use the following command, replacing <day> and <year>:
@@ -41,6 +33,14 @@ $> bun new <year> <day>
 
 This command will create a new directory for the solution and initialize it with the necessary files. It will also add the solution to the list of available solutions so that it can be run.
 
+### Running the code
+
+To run a solution for a specific day, use the following command, replacing <day> with the day you want to run:
+
+```bash
+$> bun solution <year> <day>
+```
+
 ## Solutions
 
 ### [Advent of code 2023](https://adventofcode.com/2023)
@@ -48,6 +48,9 @@ This command will create a new directory for the solution and initialize it with
 - [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)
   - [Part 1](./years/2023/day-1/part-1.ts)
   - [Part 2](./years/2023/day-1/part-2.ts)
+- [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)
+  - [Part 1](./years/2023/day-4/part-1.ts)
+  - [Part 2](./years/2023/day-4/part-2.ts)
 
 ### [Advent of code 2022](https://adventofcode.com/2022)
 
